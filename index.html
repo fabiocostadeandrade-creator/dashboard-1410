@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Portal Distrital 1410</title>
-.mobile{
-    background:#ff7a00;
-}
+
 <style>
+
 body{
     font-family:Arial,sans-serif;
     background:#f4f6fa;
@@ -17,13 +16,14 @@ body{
 }
 
 .container{
-    max-width:1200px;
+    max-width:1400px;
     margin:auto;
 }
 
 h1{
     text-align:center;
     color:#0f3d75;
+    margin-bottom:10px;
 }
 
 .sub{
@@ -32,16 +32,37 @@ h1{
     margin-bottom:30px;
 }
 
+.mobile-card{
+    background:white;
+    border:2px solid #ff7a00;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:25px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.mobile-title{
+    font-size:24px;
+    font-weight:bold;
+    color:#0f3d75;
+    margin-bottom:15px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
 .card{
     background:white;
     border-radius:12px;
-    padding:20px;
-    margin-bottom:15px;
+    padding:18px;
     box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
 
 .nome{
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
     color:#0f3d75;
     margin-bottom:15px;
@@ -49,20 +70,20 @@ h1{
 
 .links{
     display:flex;
-    gap:12px;
-    flex-wrap:wrap;
+    gap:10px;
 }
 
 .btn{
     text-decoration:none;
-    padding:12px 20px;
-    border-radius:8px;
     color:white;
+    padding:10px 18px;
+    border-radius:8px;
     font-weight:bold;
+    display:inline-block;
 }
 
 .mdtr{
-    background:#0f5cc0;
+    background:#1565d8;
 }
 
 .audit{
@@ -73,11 +94,19 @@ h1{
     background:#ff7a00;
 }
 
-.btn:hover{
-    opacity:.9;
+@media(max-width:1000px){
+.grid{
+grid-template-columns:repeat(2,1fr);
 }
-</style>
+}
 
+@media(max-width:700px){
+.grid{
+grid-template-columns:1fr;
+}
+}
+
+</style>
 </head>
 
 <body>
@@ -86,15 +115,16 @@ h1{
 
 <h1>📊 Portal Distrital 1410</h1>
 <p class="sub">Junho 2026 • MDTR • AUDIT • Pré-visita</p>
-    <div class="card" style="border:2px solid #ff7a00;">
-    <div class="nome">📱 AUDIT Mobile — Pré-visita</div>
 
-    <div class="links">
-        <a class="btn mobile" href="audit_mobile.html">
-            📱 Abrir AUDIT Mobile
-        </a>
-    </div>
+<div class="mobile-card">
+<div class="mobile-title">📱 AUDIT Mobile — Pré-visita</div>
+
+<a class="btn mobile" href="audit_mobile.html">
+Abrir AUDIT Mobile
+</a>
 </div>
+
+<div class="grid">
 
 <div class="card">
 <div class="nome">Ana Paula</div>
@@ -189,6 +219,8 @@ h1{
 <div class="links">
 <a class="btn mdtr" href="mdtr_christiane.html">📈 MDTR</a>
 </div>
+</div>
+
 </div>
 
 </div>
