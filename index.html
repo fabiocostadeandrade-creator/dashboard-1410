@@ -73,6 +73,14 @@ h1{
     flex-wrap:wrap;
 }
 
+.audit-options{
+    width:100%;
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    padding-top:2px;
+}
+
 .btn{
     text-decoration:none;
     color:white;
@@ -88,6 +96,14 @@ h1{
 
 .audit{
     background:#00a86b;
+}
+
+.audit-visitados{
+    background:#008f5b;
+}
+
+.audit-nao-visitados{
+    background:#d97706;
 }
 
 .ddd{
@@ -165,7 +181,6 @@ text-align:center;
 <a class="btn snc" href="snc.html">Abrir SNC 6.0</a>
 </div>
 
-
 <div class="grid">
 
 <div class="card">
@@ -208,8 +223,11 @@ text-align:center;
 <div class="nome">Carlos</div>
 <div class="links">
 <a class="btn mdtr" href="mdtr_carlos.html">📈 MDTR</a>
-<a class="btn audit" href="audit_carlos.html">🩺 AUDIT</a>
 <a class="btn ddd" href="ddd_carlos_v6_9.html">🎯 DDD</a>
+<div class="audit-options">
+<a class="btn audit-visitados" href="audit_carlos_visitados.html">🩺 AUDIT — Visitados</a>
+<a class="btn audit-nao-visitados" href="audit_carlos_nao_visitados.html">🩺 AUDIT — Não visitados</a>
+</div>
 </div>
 </div>
 
@@ -271,6 +289,7 @@ text-align:center;
 <div class="nome">Christiane</div>
 <div class="links">
 <a class="btn mdtr" href="mdtr_christiane.html">📈 MDTR</a>
+<a class="btn audit" href="audit_christiane.html">🩺 AUDIT</a>
 <a class="btn ddd" href="ddd_christiane_v6_9.html">🎯 DDD</a>
 </div>
 </div>
