@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
 <title>Portal Distrital 1410</title>
 
 <style>
@@ -88,68 +92,48 @@ h1{
     border-radius:8px;
     font-weight:bold;
     display:inline-block;
+    transition:opacity .2s ease, transform .2s ease;
 }
 
-.mdtr{
-    background:#1565d8;
+.btn:hover{
+    opacity:.9;
+    transform:translateY(-1px);
 }
 
-.audit{
-    background:#00a86b;
-}
-
-.audit-visitados{
-    background:#008f5b;
-}
-
-.audit-nao-visitados{
-    background:#d97706;
-}
-
-.ddd{
-    background:#6f42c1;
-}
-
-.mobile{
-    background:#ff7a00;
-}
-
-.poviztra{
-    background:#0096ff;
-}
-
-.snc{
-    background:#0B2D6B;
-}
-
-.araujo{
-    background:#d32f2f;
-}
+.mdtr{ background:#1565d8; }
+.audit{ background:#00a86b; }
+.audit-visitados{ background:#008f5b; }
+.audit-nao-visitados{ background:#d97706; }
+.ddd{ background:#6f42c1; }
+.mobile{ background:#ff7a00; }
+.poviztra{ background:#0096ff; }
+.snc{ background:#0B2D6B; }
+.araujo{ background:#d32f2f; }
 
 @media(max-width:1000px){
-.grid{
-grid-template-columns:repeat(2,1fr);
-}
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
 }
 
 @media(max-width:700px){
-body{
-padding:15px;
-}
+    body{
+        padding:15px;
+    }
 
-.grid{
-grid-template-columns:1fr;
-}
+    .grid{
+        grid-template-columns:1fr;
+    }
 
-.mobile-title{
-font-size:21px;
-}
+    .mobile-title{
+        font-size:21px;
+    }
 
-.btn{
-width:100%;
-box-sizing:border-box;
-text-align:center;
-}
+    .btn{
+        width:100%;
+        box-sizing:border-box;
+        text-align:center;
+    }
 }
 </style>
 </head>
@@ -162,140 +146,145 @@ text-align:center;
 <p class="sub">Junho 2026 • MDTR • AUDIT • DDD • Pré-visita • Captações</p>
 
 <div class="mobile-card">
-<div class="mobile-title">🏪 Captações Rede Araújo</div>
-<a class="btn araujo" href="captacoes_araujo.html">Abrir Captações Araújo</a>
+    <div class="mobile-title">🏪 Captações Rede Araújo</div>
+    <a class="btn araujo" href="captacoes_araujo.html?v=20260726-01">Abrir Captações Araújo</a>
 </div>
 
 <div class="mobile-card">
-<div class="mobile-title">📱 AUDIT Mobile — Pré-visita</div>
-<a class="btn mobile" href="audit_mobile.html">Abrir AUDIT Mobile</a>
+    <div class="mobile-title">📱 AUDIT Mobile — Pré-visita</div>
+    <a class="btn mobile" href="audit_mobile.html?v=20260726-01">Abrir AUDIT Mobile</a>
 </div>
 
 <div class="mobile-card">
-<div class="mobile-title">💉 AUDIT POVIZTRA — Mercado GLP-1</div>
-<a class="btn poviztra" href="audit_poviztra_glp1.html">Abrir AUDIT POVIZTRA</a>
+    <div class="mobile-title">💉 AUDIT POVIZTRA — Mercado GLP-1</div>
+    <a class="btn poviztra" href="audit_poviztra_glp1.html?v=20260726-01">Abrir AUDIT POVIZTRA</a>
 </div>
 
 <div class="mobile-card">
-<div class="mobile-title">🧠 SNC 6.0 — Mercados Montados</div>
-<a class="btn snc" href="snc.html">Abrir SNC 6.0</a>
+    <div class="mobile-title">🧠 SNC 6.0 — Mercados Montados</div>
+    <a class="btn snc" href="snc.html?v=20260726-01">Abrir SNC 6.0</a>
 </div>
 
 <div class="grid">
 
 <div class="card">
-<div class="nome">Ana Paula</div>
-<div class="links">
-<a class="btn mdtr" href="mdtr_ana_paula.html">📈 MDTR</a>
-<a class="btn audit" href="audit_ana_paula.html">🩺 AUDIT</a>
-<a class="btn ddd" href="ddd_ana_v6_9.html">🎯 DDD</a>
-</div>
-</div>
-
-<div class="card">
-<div class="nome">Andrews</div>
-<div class="links">
-<a class="btn mdtr" href="mdtr_andrews.html">📈 MDTR</a>
-<a class="btn audit" href="audit_andrews.html">🩺 AUDIT</a>
-<a class="btn ddd" href="ddd_andrews_v6_9.html">🎯 DDD</a>
-</div>
+    <div class="nome">Ana Paula</div>
+    <div class="links">
+        <a class="btn mdtr" href="mdtr_ana_paula.html?v=20260726-01">📈 MDTR</a>
+        <a class="btn audit" href="audit_ana_paula.html?v=20260726-01">🩺 AUDIT</a>
+        <a class="btn ddd" href="ddd_ana_v6_9.html?v=20260726-01">🎯 DDD</a>
+    </div>
 </div>
 
 <div class="card">
-<div class="nome">Andreza</div>
-<div class="links">
-<a class="btn mdtr" href="mdtr_andreza.html">📈 MDTR</a>
-<a class="btn audit" href="audit_andreza.html">🩺 AUDIT</a>
-<a class="btn ddd" href="ddd_andreza_v6_9.html">🎯 DDD</a>
-</div>
-</div>
-
-<div class="card">
-<div class="nome">Carla</div>
-<div class="links">
-<a class="btn mdtr" href="mdtr_carla.html">📈 MDTR</a>
-<a class="btn audit" href="audit_carla.html">🩺 AUDIT</a>
-<a class="btn ddd" href="ddd_carla_v6_9.html">🎯 DDD</a>
-</div>
+    <div class="nome">Andrews</div>
+    <div class="links">
+        <a class="btn mdtr" href="mdtr_andrews.html?v=20260726-01">📈 MDTR</a>
+        <a class="btn audit" href="audit_andrews.html?v=20260726-01">🩺 AUDIT</a>
+        <a class="btn ddd" href="ddd_andrews_v6_9.html?v=20260726-01">🎯 DDD</a>
+    </div>
 </div>
 
 <div class="card">
-<div class="nome">Carlos</div>
-<div class="links">
-<a class="btn mdtr" href="mdtr_carlos.html">📈 MDTR</a>
-<a class="btn ddd" href="ddd_carlos_v6_9.html">🎯 DDD</a>
-<div class="audit-options">
-<a class="btn audit-visitados" href="mdtr_carlos_visitados.html">🩺 AUDIT — Visitados</a>
-<a class="btn audit-nao-visitados" href="mdtr_carlos_nao_visitados.html">🩺 AUDIT — Não visitados</a>
-</div>
-</div>
+    <div class="nome">Andreza</div>
+    <div class="links">
+        <a class="btn mdtr" href="mdtr_andreza.html?v=20260726-01">📈 MDTR</a>
+        <a class="btn audit" href="audit_andreza.html?v=20260726-01">🩺 AUDIT</a>
+        <a class="btn ddd" href="ddd_andreza_v6_9.html?v=20260726-01">🎯 DDD</a>
+    </div>
 </div>
 
 <div class="card">
-<div class="nome">Larissa</div>
-<div class="links">
-<a class="btn mdtr" href="mdtr_larissa.html">📈 MDTR</a>
-<a class="btn audit" href="audit_larissa.html">🩺 AUDIT</a>
-<a class="btn ddd" href="ddd_larissa_v6_9.html">🎯 DDD</a>
-</div>
-</div>
-
-<div class="card">
-<div class="nome">Layza</div>
-<div class="links">
-<a class="btn mdtr" href="mdtr_layza.html">📈 MDTR</a>
-<a class="btn audit" href="audit_layza.html">🩺 AUDIT</a>
-<a class="btn ddd" href="ddd_layza_v6_9.html">🎯 DDD</a>
-</div>
+    <div class="nome">Carla</div>
+    <div class="links">
+        <a class="btn mdtr" href="mdtr_carla.html?v=20260726-01">📈 MDTR</a>
+        <a class="btn audit" href="audit_carla.html?v=20260726-01">🩺 AUDIT</a>
+        <a class="btn ddd" href="ddd_carla_v6_9.html?v=20260726-01">🎯 DDD</a>
+    </div>
 </div>
 
 <div class="card">
-<div class="nome">Leandro</div>
-<div class="links">
-<a class="btn mdtr" href="mdtr_leandro.html">📈 MDTR</a>
-<a class="btn audit" href="audit_leandro.html">🩺 AUDIT</a>
-<a class="btn ddd" href="ddd_leandro_v6_9.html">🎯 DDD</a>
-</div>
+    <div class="nome">Carlos</div>
+    <div class="links">
+        <a class="btn mdtr" href="mdtr_carlos.html?v=20260726-01">📈 MDTR</a>
+        <a class="btn ddd" href="ddd_carlos_v6_9.html?v=20260726-01">🎯 DDD</a>
+
+        <div class="audit-options">
+            <a class="btn audit-visitados" href="audit_carlos_visitados.html?v=20260726-01">
+                🩺 AUDIT — Visitados
+            </a>
+
+            <a class="btn audit-nao-visitados" href="audit_carlos_nao_visitados.html?v=20260726-01">
+                🩺 AUDIT — Não visitados
+            </a>
+        </div>
+    </div>
 </div>
 
 <div class="card">
-<div class="nome">Ramon</div>
-<div class="links">
-<a class="btn mdtr" href="mdtr_ramon.html">📈 MDTR</a>
-<a class="btn audit" href="audit_ramon.html">🩺 AUDIT</a>
-<a class="btn ddd" href="ddd_ramon_v6_9.html">🎯 DDD</a>
-</div>
-</div>
-
-<div class="card">
-<div class="nome">Ricardo</div>
-<div class="links">
-<a class="btn mdtr" href="mdtr_ricardo.html">📈 MDTR</a>
-<a class="btn audit" href="audit_ricardo.html">🩺 AUDIT</a>
-<a class="btn ddd" href="ddd_ricardo_v6_9.html">🎯 DDD</a>
-</div>
+    <div class="nome">Larissa</div>
+    <div class="links">
+        <a class="btn mdtr" href="mdtr_larissa.html?v=20260726-01">📈 MDTR</a>
+        <a class="btn audit" href="audit_larissa.html?v=20260726-01">🩺 AUDIT</a>
+        <a class="btn ddd" href="ddd_larissa_v6_9.html?v=20260726-01">🎯 DDD</a>
+    </div>
 </div>
 
 <div class="card">
-<div class="nome">Ruane</div>
-<div class="links">
-<a class="btn mdtr" href="mdtr_ruane.html">📈 MDTR</a>
-<a class="btn audit" href="audit_ruane.html">🩺 AUDIT</a>
-<a class="btn ddd" href="ddd_ruane_v6_9.html">🎯 DDD</a>
-</div>
+    <div class="nome">Layza</div>
+    <div class="links">
+        <a class="btn mdtr" href="mdtr_layza.html?v=20260726-01">📈 MDTR</a>
+        <a class="btn audit" href="audit_layza.html?v=20260726-01">🩺 AUDIT</a>
+        <a class="btn ddd" href="ddd_layza_v6_9.html?v=20260726-01">🎯 DDD</a>
+    </div>
 </div>
 
 <div class="card">
-<div class="nome">Christiane</div>
-<div class="links">
-<a class="btn mdtr" href="mdtr_christiane.html">📈 MDTR</a>
-<a class="btn audit" href="audit_christiane.html">🩺 AUDIT</a>
-<a class="btn ddd" href="ddd_christiane_v6_9.html">🎯 DDD</a>
+    <div class="nome">Leandro</div>
+    <div class="links">
+        <a class="btn mdtr" href="mdtr_leandro.html?v=20260726-01">📈 MDTR</a>
+        <a class="btn audit" href="audit_leandro.html?v=20260726-01">🩺 AUDIT</a>
+        <a class="btn ddd" href="ddd_leandro_v6_9.html?v=20260726-01">🎯 DDD</a>
+    </div>
 </div>
+
+<div class="card">
+    <div class="nome">Ramon</div>
+    <div class="links">
+        <a class="btn mdtr" href="mdtr_ramon.html?v=20260726-01">📈 MDTR</a>
+        <a class="btn audit" href="audit_ramon.html?v=20260726-01">🩺 AUDIT</a>
+        <a class="btn ddd" href="ddd_ramon_v6_9.html?v=20260726-01">🎯 DDD</a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="nome">Ricardo</div>
+    <div class="links">
+        <a class="btn mdtr" href="mdtr_ricardo.html?v=20260726-01">📈 MDTR</a>
+        <a class="btn audit" href="audit_ricardo.html?v=20260726-01">🩺 AUDIT</a>
+        <a class="btn ddd" href="ddd_ricardo_v6_9.html?v=20260726-01">🎯 DDD</a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="nome">Ruane</div>
+    <div class="links">
+        <a class="btn mdtr" href="mdtr_ruane.html?v=20260726-01">📈 MDTR</a>
+        <a class="btn audit" href="audit_ruane.html?v=20260726-01">🩺 AUDIT</a>
+        <a class="btn ddd" href="ddd_ruane_v6_9.html?v=20260726-01">🎯 DDD</a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="nome">Christiane</div>
+    <div class="links">
+        <a class="btn mdtr" href="mdtr_christiane.html?v=20260726-01">📈 MDTR</a>
+        <a class="btn audit" href="audit_christiane.html?v=20260726-01">🩺 AUDIT</a>
+        <a class="btn ddd" href="ddd_christiane_v6_9.html?v=20260726-01">🎯 DDD</a>
+    </div>
 </div>
 
 </div>
-
 </div>
 
 </body>
