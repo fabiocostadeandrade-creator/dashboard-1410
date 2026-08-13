@@ -87,34 +87,47 @@
 }
 
 
-/* CORREÇÃO IPAD V2 — EXCLUSIVAMENTE ABA BIG NUMBERS */
+/* TESTE IPAD V3 — COMPACTAÇÃO SOMENTE DA ABA BIG NUMBERS */
 @media (min-width:621px) and (max-width:1180px){
+  #big .bn-group{
+    padding:10px !important;
+    margin-bottom:14px !important;
+  }
   #big .bn-row{
-    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
-    gap:10px !important;
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+    gap:8px !important;
   }
   #big .bn-row .card{
     min-width:0 !important;
-    width:100% !important;
-    overflow:visible !important;
+    padding:10px 8px !important;
   }
-  #big .bn-row .bn-side{
-    grid-column:1 / -1 !important;
+  #big .bn-row .label{
+    font-size:10px !important;
+    line-height:1.15 !important;
   }
   #big .bn-row .value{
+    min-width:0 !important;
     max-width:100% !important;
+    white-space:nowrap !important;
     overflow:visible !important;
     text-overflow:clip !important;
-    white-space:nowrap !important;
-  }
-  #big .bn-row .bn-main .value{
-    font-size:clamp(23px,3.1vw,29px) !important;
-  }
-  #big .bn-row .bn-evol .value{
-    font-size:clamp(28px,3.8vw,34px) !important;
+    letter-spacing:-0.35px !important;
   }
   #big .bn-row .bn-side .value{
-    font-size:28px !important;
+    font-size:clamp(19px,2.35vw,25px) !important;
+  }
+  #big .bn-row .bn-main .value{
+    font-size:clamp(20px,2.45vw,26px) !important;
+  }
+  #big .bn-row .bn-evol{
+    padding:11px 8px !important;
+  }
+  #big .bn-row .bn-evol .value{
+    font-size:clamp(25px,3.0vw,31px) !important;
+  }
+  #big .bn-row .small{
+    font-size:11px !important;
+    line-height:1.15 !important;
   }
 }
 
