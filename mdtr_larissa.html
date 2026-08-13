@@ -86,6 +86,34 @@
  #big .bn-row-label{min-height:auto;padding:10px}
 }
 
+
+/* AJUSTE RESPONSIVO IPAD — SOMENTE ABA BIG NUMBERS */
+@media (min-width:621px) and (max-width:1180px){
+  #big .bn-row{
+    grid-template-columns:minmax(108px,.62fr) minmax(0,2.55fr) minmax(0,2.55fr) !important;
+    gap:12px !important;
+  }
+  #big .bn-row .card{
+    min-width:0 !important;
+  }
+  #big .bn-row .value{
+    overflow:visible !important;
+    white-space:nowrap !important;
+  }
+  #big .bn-row .bn-side .value{
+    font-size:clamp(22px,2.65vw,30px) !important;
+  }
+  #big .bn-row .bn-main .value{
+    font-size:clamp(24px,2.8vw,31px) !important;
+  }
+  #big .bn-row .bn-evol .value{
+    font-size:clamp(29px,3.25vw,34px) !important;
+  }
+  #big .bn-row .label{
+    overflow-wrap:anywhere;
+  }
+}
+
 </style></head><body><nav class="menu"><button class="active" data-t="big">🏠 Big Numbers</button><button data-t="prod">📊 Ranking Produto</button><button data-t="sem">🏪 Ranking PDV Sem Poviztra</button><button data-t="pov">💉 Ranking PDV Poviztra</button><button data-t="brick">🧱 Ranking Bricks</button><button data-t="pre">📋 Pré-visita PDV</button><button data-t="ana">📈 Análise Produto</button><button data-t="def">📉 Deflatores</button><button data-t="sug">🎯 Suganon</button></nav><main><header><h1>MDTR LARISSA FERREIRA SAO JOSE — Agosto/2026 <span class="newtag">PROJEÇÃO</span></h1><div>Faturamento realizado de <b>01/08/2026 a 08/08/2026</b> • Projeção de fechamento para agosto/2026.</div></header><div class="alert">ATENÇÃO: análise usa Ago/25 REALIZADO x Ago/26 PROJETADO com base no realizado até 08/08. Pré-visita e Análise Produto usam unidades reais, sem projeção.</div>
 <section id="big" class="panel active"><button class="clean">Limpar filtros</button><h2>Big Numbers</h2><div id="cards" class="cards"></div></section>
 <section id="prod" class="panel"><button class="clean">Limpar filtros</button><h2>Ranking Produto — R$ e unidades</h2><input id="qprod" placeholder="Buscar marca"><div id="tprod"></div><div id="dprod" class="detail small">Clique em uma marca para ver as apresentações.</div></section>
